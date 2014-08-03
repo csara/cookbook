@@ -1,0 +1,226 @@
+\documentclass[12pt]{article}
+%a4paper,
+%twoside,
+
+
+% encoding, font, language
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage{lmodern}
+\usepackage[ngerman, english]{babel}
+\usepackage{gensymb}
+\usepackage{nicefrac}
+\usepackage{titlesec}
+
+\usepackage[
+    handwritten,
+    nowarnings,
+    %myconfig
+]
+{xcookybooky}
+
+\usepackage{blindtext}    % only needed for generating test text
+
+\definecolor{mygreen}{rgb}{0,.5,0}
+\DeclareRobustCommand{\textdegree}{\ensuremath{^{\circ}\mathrm{F}}}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+
+%----------------------------------------------------------------------------------------
+%	SET RECIPE COLORS
+%----------------------------------------------------------------------------------------
+\setRecipeColors
+{%
+    recipename = mygreen,
+    ing = blue,
+    inghead = blue,
+    prep,
+    prephead,
+    hint,
+    hinthead,
+}
+
+
+%----------------------------------------------------------------------------------------
+%	SET RECIPE HEADLINE NAMES
+%----------------------------------------------------------------------------------------
+
+
+\setHeadlines{
+inghead = Ingredients,
+prephead = Directions,
+preparationtime = Preparation,
+bakingtime = Cook,
+hinthead = Hint,
+calory = Calories, % deal w/ it the dude that wrote this is german
+portion = Servings,
+portionvalue =,
+continuationhead = Continuation,
+continuationfoot = Continuation on next page,
+source = By
+}
+
+%----------------------------------------------------------------------------------------
+%	SECTION OPTIONS
+%----------------------------------------------------------------------------------------
+
+\setcounter{secnumdepth}{1}
+
+\renewcommand*{\recipesection}[2][]
+{%
+    \subsubsection[#1]{#2}
+}
+\renewcommand{\subsectionmark}[1]
+{% no implementation to display the section name instead
+}
+
+
+%%%%%%%%%%
+% hyperref
+\usepackage{hyperref}    % must be the last package
+\hypersetup{%
+    pdfauthor            = {Christopher Sara},
+    pdftitle             = {Cookbook v0.1},
+    pdfsubject           = {Recipes},
+    pdfkeywords          = {recipes},
+    pdfstartview         = {FitV},             
+    pdfview              = {FitH},
+    pdfpagemode          = {UseNone}, % Options; UseNone, UseOutlines
+    bookmarksopen        = {true},
+    pdfpagetransition    = {Glitter},
+    colorlinks           = {true},
+    linkcolor            = {black}, 
+    urlcolor             = {black}
+    citecolor            = {black}, 
+    filecolor            = {black},
+}
+% hyperref
+%%%%%%%%%%
+
+
+
+\begin{document}
+
+\title{Cookbook v0.1}
+\author{Christopher Sara}
+\maketitle
+
+\newpage
+
+\tableofcontents
+
+%\vspace{9em}
+
+\newpage
+
+\section{Breakfast}
+\newpage
+
+
+\subsection{Breads}
+\newpage
+
+\begin{recipe}
+[ % 
+    preparationtime = {\unit[1]{h}},
+    bakingtime={\unit[1]{h}},
+    bakingtemperature={\protect\bakingtemperature{fanoven=\unit[300]{\textdegree}F}},
+    %bakingtemperature={\protect\bakingtemperature{fanoven=\unit[230]{\textdegree}F, topbottomheat=\unit[195]{\textdegree}F, topheat=\unit[195]{\textdegree}F, gasstove=Stove 2}},
+    portion = {\portion{10-12 Slices}},
+    source = Jennifer Sara
+]
+{Banana Bread}
+    
+    %\graph
+    %{% pictures
+       % small=pic/glass,     % small picture
+        %big=pic/ingredients  % big picture
+    %}
+    
+    \ingredients
+    {%
+    	$\nicefrac{1}{2}$ & c  & butter (room temp.) \\
+    	$\nicefrac{1}{2}$ & c  & sugar \\
+    	$\nicefrac{1}{2}$ & c  & brown sugar \\
+        1 & tsp & vanilla\\
+        2 & & eggs \\
+        2 & c & flour\\
+        1 & tsp & baking soda\\ 
+        2 & overripe & bananas \\
+	$\nicefrac{1}{2}$ & c & walnuts and/or \\ & & chocolate chips \\               
+    }
+    
+    \preparation
+    {%
+    	\step Preheat oven to 300 {\textdegree}F.
+        \step Mix butter, sugar, and vanilla into a medium sized bowl. 
+        \step While stirring, add in one egg at a time.
+        \step Add baking soda.
+        \step Stir in flour $\nicefrac{1}{2}$ c at a time until completely mixed in.
+        \step You may add in $\nicefrac{1}{2}$ c and/or $\nicefrac{1}{2}$ c chocolate chips if you like.
+        \step Place dough in well-greased or non-stick bread pan. Smooth the top.
+        \step Put in oven for 65--70 minutes.  Test near the end to make sure dough has fully baked.
+        \step Let bread cool in the pan for 10 minutes then put the bread on a rack to cool.        
+    }
+    
+    \hint{Be sure to allow bread cool well before slicing.}
+
+\end{recipe}
+\newpage
+
+\subsection{Egg Plates}
+\newpage
+
+\begin{recipe}
+[ % 
+    preparationtime = {\unit[30]{min}},
+    bakingtime={\unit[45]{min}},
+    bakingtemperature={\protect\bakingtemperature{fanoven=\unit[350]{\textdegree}F}},
+    %bakingtemperature={\protect\bakingtemperature{fanoven=\unit[230]{\textdegree}F, topbottomheat=\unit[195]{\textdegree}F, topheat=\unit[195]{\textdegree}F, gasstove=Stove 2}},
+    portion = {\portion{4--5}},
+    source = Jennifer Sara
+]
+{Egg Casserole}
+    
+    %\graph
+    %{% pictures
+       % small=pic/glass,     % small picture
+        %big=pic/ingredients  % big picture
+    %}
+    
+    \ingredients
+    {%
+    	1 & lb.  & breakfast sausage \\
+    	6--8 &   & eggs \\
+    	2 & c  & milk \\
+        1 & tsp & dry mustard\\
+        4--5 & slices & cubed white bread \\
+        1 & c & cheese\\
+        1 & tsp & salt\\               
+    }
+    
+    \preparation
+    {%
+    	\step Brown sausage in a pan and drain fat.
+        \step Beat eggs in a large bowl. 
+        \step Add milk, mustard, and bread. Stir.
+        \step Add the cheese and sausage.
+        \step Place mixture into a greased 13x9 pan.
+        \step Preheat oven to \unit[350]{\textdegree}F. Bake for 45 minutes. 
+    }
+    
+    \hint{Substitute the sausage for your preferred vegetables or use both.}
+\end{recipe}
+\newpage
+
+\section{Slow Cooked}
+\newpage
+
+\section{Salads}
+\newpage
+
+\section{Desserts}
+\newpage
+
+\end{document}

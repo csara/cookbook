@@ -1,3 +1,11 @@
+%Author: Christopher Sara
+% 
+%
+%
+%Copyright 2014 
+
+
+
 \documentclass[12pt]{article}
 %a4paper,
 %twoside,
@@ -16,8 +24,7 @@
     handwritten,
     nowarnings,
     %myconfig
-]
-{xcookybooky}
+]{xcookybooky}
 
 \usepackage{blindtext}    % only needed for generating test text
 
@@ -81,7 +88,7 @@ source = By
 \usepackage{hyperref}    % must be the last package
 \hypersetup{%
     pdfauthor            = {Christopher Sara},
-    pdftitle             = {Cookbook v0.1},
+    pdftitle             = {Cookbook!},
     pdfsubject           = {Recipes},
     pdfkeywords          = {recipes},
     pdfstartview         = {FitV},             
@@ -115,61 +122,6 @@ source = By
 \newpage
 
 \section{Breakfast}
-\newpage
-
-
-\subsection{Breads}
-\newpage
-
-\begin{recipe}
-[ % 
-    preparationtime = {\unit[1]{h}},
-    bakingtime={\unit[1]{h}},
-    bakingtemperature={\protect\bakingtemperature{fanoven=\unit[300]{\textdegree}F}},
-    %bakingtemperature={\protect\bakingtemperature{fanoven=\unit[230]{\textdegree}F, topbottomheat=\unit[195]{\textdegree}F, topheat=\unit[195]{\textdegree}F, gasstove=Stove 2}},
-    portion = {\portion{10-12 Slices}},
-    source = Jennifer Sara
-]
-{Banana Bread}
-    
-    %\graph
-    %{% pictures
-       % small=pic/glass,     % small picture
-        %big=pic/ingredients  % big picture
-    %}
-    
-    \ingredients
-    {%
-    	$\nicefrac{1}{2}$ & c  & butter (room temp.) \\
-    	$\nicefrac{1}{2}$ & c  & sugar \\
-    	$\nicefrac{1}{2}$ & c  & brown sugar \\
-        1 & tsp & vanilla\\
-        2 & & eggs \\
-        2 & c & flour\\
-        1 & tsp & baking soda\\ 
-        2 & overripe & bananas \\
-	$\nicefrac{1}{2}$ & c & walnuts and/or \\ & & chocolate chips \\               
-    }
-    
-    \preparation
-    {%
-    	\step Preheat oven to 300 {\textdegree}F.
-        \step Mix butter, sugar, and vanilla into a medium sized bowl. 
-        \step While stirring, add in one egg at a time.
-        \step Add baking soda.
-        \step Stir in flour $\nicefrac{1}{2}$ c at a time until completely mixed in.
-        \step You may add in $\nicefrac{1}{2}$ c and/or $\nicefrac{1}{2}$ c chocolate chips if you like.
-        \step Place dough in well-greased or non-stick bread pan. Smooth the top.
-        \step Put in oven for 65--70 minutes.  Test near the end to make sure dough has fully baked.
-        \step Let bread cool in the pan for 10 minutes then put the bread on a rack to cool.        
-    }
-    
-    \hint{Be sure to allow bread cool well before slicing.}
-
-\end{recipe}
-\newpage
-
-\subsection{Egg Plates}
 \newpage
 
 \begin{recipe}
@@ -214,13 +166,230 @@ source = By
 \end{recipe}
 \newpage
 
-\section{Slow Cooked}
+\section{Dinner}
+\begin{recipe}
+[ % 
+    preparationtime = {\unit[10]{min}},
+    bakingtime={\unit[20-25]{min}},
+   % bakingtemperature={\protect\bakingtemperature{fanoven=\unit[300]{\textdegree}F}},
+    %bakingtemperature={\protect\bakingtemperature{fanoven=\unit[230]{\textdegree}F, topbottomheat=\unit[195]{\textdegree}F, topheat=\unit[195]{\textdegree}F, gasstove=Stove 2}},
+    portion = {\portion{5-6 Servings}},
+    source = Jennifer Sara
+]
+{Chicken Wings \& Rice}
+    
+    %\graph
+    %{% pictures
+       % small=pic/glass,     % small picture
+        %big=pic/ingredients  % big picture
+    %}
+    
+    \ingredients
+    {%
+    	\
+        2 & pckgs & wings\\
+	$3 \nicefrac{1}{2}$ & c  & chicken broth \\
+	$1 \nicefrac{1}{2}$ & c  & white rice, uncooked \\
+	$\nicefrac{3}{4}$ & c  & flour \\
+	$\nicefrac{1}{2}$ & c  & white rice, uncooked \\
+	$\nicefrac{1}{2}$ & tsp.  & salt \\
+	$\nicefrac{1}{2}$ & tsp. & pepper \\
+	$\nicefrac{1}{2}$ & tsp. & thyme\\
+	$\nicefrac{1}{2}$ & cbe  & butter \\
+        2 & stalks & celery\\
+        2 & & green onions, sliced\\              
+    }
+    
+    \preparation
+    {%
+    	\step Wash chicken and dry with paper towel.
+        \step Combine flour, salt, pepper, and thyme in a paper or Ziplc bag.
+        \step Add chicken and coat with mixture.
+        \step Melt butter in skillet over medium-high heat.
+        \step Shake off excess coating from chicken and brown with butter until browned and cooked.
+        \step Remove chicken to plate and keep warm.
+        \step Add celery, onion, and rice. Stir until brown.
+        \step Add broth and return chicken and accumulated juiced to skillet.
+        \step Cover tightly and simmer with lid on for 20-25 minutes until rice is cooked. Stir occasionally.
+    }
+    
+    \hint{Can be served with toasted almond on top and/or cranberry sauce}
+
+\end{recipe}
+\newpage
+\begin{recipe}
+[ % 
+    preparationtime = {\unit[15]{min}},
+    bakingtime={\unit[20]{min}},
+   bakingtemperature={\protect\bakingtemperature{fanoven=\unit[375]{\textdegree}F}},
+    %bakingtemperature={\protect\bakingtemperature{fanoven=\unit[230]{\textdegree}F, topbottomheat=\unit[195]{\textdegree}F, topheat=\unit[195]{\textdegree}F, gasstove=Stove 2}},
+    portion = {\portion{5-6 Servings}},
+    source = Christopher Sara
+]
+{Garlic Shrimp Rigatoni}
+    
+    %\graph
+    %{% pictures
+       % small=pic/glass,     % small picture
+        %big=pic/ingredients  % big picture
+    %}
+    
+    \ingredients
+    {%    	
+        1  & lb.  & raw shrimp (tail-off) \\
+    	4 & cloves  & garlic \\
+    	1 & tbls  & butter \\
+        6 & oz & Rigatoni\\ 
+        1 & can & fire-roasted tomatoes\\              
+        16 & oz & alfredo\\
+        $\nicefrac{1}{4}$ & cup  & Parmesan cheese \\         
+    }
+    
+    \preparation
+    {%
+    	\step Preheat oven to 375 {\textdegree}F.  
+    	\step Cook pasta in a pot.      
+    	\step In a skillet, melt 1 tablespoon of butter and sauté garlic.  Add shrimp and cook. Set aside.
+    	\step Drain pasta and add to baking pan. 
+    	\step Add tomatoes, alfredo, and cooked shrimp to the pan. Top with Parmesan if desired. 
+    	\step Put in oven for about 10-15 minutes or until cheese is golden brown on top.
+    }
+    
+    \hint{A 13x9 fits this dish perfectly.}
+
+\end{recipe}
 \newpage
 
 \section{Salads}
 \newpage
 
 \section{Desserts}
+\begin{recipe}
+[ % 
+    preparationtime = {\unit[1]{h}},
+    bakingtime={\unit[1]{h}},
+    bakingtemperature={\protect\bakingtemperature{fanoven=\unit[300]{\textdegree}F}},
+    %bakingtemperature={\protect\bakingtemperature{fanoven=\unit[230]{\textdegree}F, topbottomheat=\unit[195]{\textdegree}F, topheat=\unit[195]{\textdegree}F, gasstove=Stove 2}},
+    portion = {\portion{10-12 Slices}},
+    source = Jennifer Sara
+]
+{Banana Bread}
+    
+    %\graph
+    %{% pictures
+       % small=pic/glass,     % small picture
+        %big=pic/ingredients  % big picture
+    %}
+    
+    \ingredients
+    {%
+    	$\nicefrac{1}{2}$ & c  & butter (room temp.) \\
+    	$\nicefrac{1}{2}$ & c  & sugar \\
+    	$\nicefrac{1}{2}$ & c  & brown sugar \\
+        1 & tsp & vanilla\\
+        2 & & eggs \\
+        2 & c & flour\\
+        1 & tsp & baking soda\\ 
+        2 & overripe & bananas \\
+	$\nicefrac{1}{2}$ & c & walnuts and/or \\ & chocolate chips \\               
+    }
+    
+    \preparation
+    {%
+    	\step Preheat oven to 300 {\textdegree}F.
+        \step Mix butter, sugar, and vanilla into a medium sized bowl. 
+        \step While stirring, add in one egg at a time.
+        \step Add baking soda.
+        \step Stir in flour $\nicefrac{1}{2}$ c at a time until completely mixed in.
+        \step You may add in $\nicefrac{1}{2}$ c and/or $\nicefrac{1}{2}$ c chocolate chips if you like.
+        \step Place dough in well-greased or non-stick bread pan. Smooth the top.
+        \step Put in oven for 65--70 minutes.  Test near the end to make sure dough has fully baked.
+        \step Let bread cool in the pan for 10 minutes then put the bread on a rack to cool.        
+    }
+    
+    \hint{Be sure to allow bread cool well before slicing.}
+
+\end{recipe}
+
+\begin{recipe}
+[ % 
+    preparationtime = {\unit[10]{min}},
+    bakingtime={\unit[30]{min}},
+    bakingtemperature={\protect\bakingtemperature{fanoven=\unit[325]{\textdegree}F}},
+    %bakingtemperature={\protect\bakingtemperature{fanoven=\unit[230]{\textdegree}F, topbottomheat=\unit[195]{\textdegree}F, topheat=\unit[195]{\textdegree}F, gasstove=Stove 2}},
+    portion = {\portion{12 bars}},
+    source = Jennifer Sara
+]
+{Cookie Dough Cheesecake Bars}
+    
+    %\graph
+    %{% pictures
+       % small=pic/glass,     % small picture
+        %big=pic/ingredients  % big picture
+    %}
+    
+    \ingredients
+    {%
+    	%$\nicefrac{1}{2}$ & c  & butter (room temp.) \\
+    	%$\nicefrac{1}{2}$ & c  & sugar \\
+    	%$\nicefrac{1}{2}$ & c  & brown sugar \\
+        % 1 & tsp & vanilla\\             
+    }
+    
+    \preparation
+    {%
+    	\step Preheat oven to 325 {\textdegree}F.       
+    }
+    
+    \hint{Be sure to allow bread cool well before slicing.}
+
+\end{recipe}
 \newpage
+
+\begin{recipe}
+[ % 
+    preparationtime = {\unit[10]{min}},
+    bakingtime={\unit[30]{min}},
+    bakingtemperature={\protect\bakingtemperature{fanoven=\unit[350]{\textdegree}F}},
+    %bakingtemperature={\protect\bakingtemperature{fanoven=\unit[230]{\textdegree}F, topbottomheat=\unit[195]{\textdegree}F, topheat=\unit[195]{\textdegree}F, gasstove=Stove 2}},
+    portion = {\portion{One 13x9}},
+]
+{Snickerdoodle Bars}
+    
+    %\graph
+    %{% pictures
+       % small=pic/glass,     % small picture
+        %big=pic/ingredients  % big picture
+    %}
+    
+    \ingredients
+    {%
+    	$2 \nicefrac{2}{3}$ & c  & all-purpose flour \\
+        2 & c & dark brown sugar\\
+        1 & c & \textbf{unsalted} butter, room temp. \\
+        2 &  & eggs\\
+        3 & tbls & white sugar\\ 
+        1 & tbls & Vanilla \\
+	3 & tsps & groud cinnamon \\
+	2 & tsps & baking powder \\
+	1 & tsps & salt \\                
+    }
+    
+    \preparation
+    {%
+    	\step Preheat oven to 350 {\textdegree}F. Lightly grease a 13x9 baking pan.
+        \step In a medium bowl, whisk together the flour, baking powder, and salt.  
+        \step In a large mixing bowl, beat together the butter, brown sugar, eggs, and vanilla until smooth. 
+        \step Add the flour mixture to the egg mixture and beat until well blended.
+        \step Spread the batter evenly in the prepared pan with a spoon or rubber scraper.
+        \step In a small bowl, combine the white sugar and cinnamon. 
+        \step Sprinkle the mixture evenly over the batter in the baking pan. Spread around top of batter.
+        \step Bake for 25-30 minutes or until the surface springs back when gently pressed. 
+        \step Remove from oven and let cool it slightly on a wire rack.   
+    }
+    
+    \hint{If you use salted butter, you're gonna have a bad time.}
+
+\end{recipe}
 
 \end{document}
